@@ -1,6 +1,6 @@
 created: 20160113131248808
 creator: Tobias Beer
-modified: 20160113145518424
+modified: 20160113162646808
 modifier: Tobias Beer
 tags: 
 title: external-Configure
@@ -41,4 +41,4 @@ Here's the top offset for the ''tobibeer'' wiki:
 <<` """;top
 :{{$:/config/ExternalWiki/tobibeer!!top}}""">>
 
-And here's the result: [[tobibeer: external]].
+And here's the result: [[tobibeer: external-Install]].
