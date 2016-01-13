@@ -1,0 +1,13 @@
+created: 20160113170522788
+creator: Tobias Beer
+modified: 20160113170849240
+modifier: Tobias Beer
+tags: 
+title: external-Styles
+type: text/vnd.tiddlywiki
+
+The [[external-tiddler|external-Macro]] macro wraps the iframe it creates in a //div// of the class: 
+
+`tc-external-tiddler`
+
+While the height and top offset are dynamically computed by the macro, some styles are applied to the wrapper and iframe as defined in <<source "$:/plugins/tobibeer/external/styles">>
