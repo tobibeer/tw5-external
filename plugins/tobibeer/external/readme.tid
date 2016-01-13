@@ -6,7 +6,7 @@ The plugin $:/plugins/tobibeer/external provides:
 : a macro to render an iframe with a tiddler of an external wiki
 ; $:/plugins/tobibeer/external/template
 : a view-template displaying an external tiddler when:<div>
-&nbsp; &nbsp; » 1. the title matches the remote tiddler pattern
+&nbsp; &nbsp; » 1. the title matches the remote tiddler pattern<br>
 &nbsp; &nbsp; » 2. the external wiki is configured and<br>
 </div>
 

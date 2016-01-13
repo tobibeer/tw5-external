@@ -1,6 +1,6 @@
 created: 20160113130108510
 creator: Tobias Beer
-modified: 20160113154319829
+modified: 20160113161318358
 modifier: Tobias Beer
 title: external-Template
 type: text/vnd.tiddlywiki
@@ -17,7 +17,3 @@ To disable the template, remove the tag $:/tags/ViewTemplate from it.
 !! Source
 
 This is the template wikitext for <<source "$:/plugins/tobibeer/external/template">>
-
-!! Example
-
-Open [[tobibeer: external-Install]] to find the tiddler ''external-Install'' automatically embedded via this template from the external wiki called ''tobibeer'' defined at <<source "$:/config/ExternalWiki/tobibeer">>

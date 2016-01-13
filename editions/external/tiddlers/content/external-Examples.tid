@@ -1,0 +1,23 @@
+created: 20160113161220436
+creator: Tobias Beer
+modified: 20160113161332246
+modifier: Tobias Beer
+tags: 
+title: external-Examples
+type: text/vnd.tiddlywiki
+
+!! Basic Example
+
+<$macrocall $name="`" text="""<<external-tiddler title:"external-Install" height:"100px">>"""/>
+
+!! Via Reference
+
+You can also use the <<x TiddlerWidget>>  to create a proper context:
+
+<$macrocall $name="`" text="""<$tiddler tiddler="tobibeer: external-Install">
+<<external-tiddler>>
+</$tiddler>"""/>
+
+!! Via Template
+
+Open [[tobibeer: external-Install]] to find the tiddler ''external-Install'' automatically embedded via this template from the external wiki called ''tobibeer'' defined at <<source "$:/config/ExternalWiki/tobibeer">>

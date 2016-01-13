@@ -22,7 +22,8 @@ WIKI="
   _server="[<CONFIG>get[text]]"
   _link="[<CONFIG>get[link]]"
   _link_default={{$:/plugins/tobibeer/external/defaults/link}}
-SERVER="[server]"
+SERVER="
+  [server]"
 LINK="
   (\$link$\ ? \$link$\) ||
   ([link] ? [link]) ||
@@ -35,14 +36,17 @@ TOP="
   (\$top$\ ? \$top$\ ) ||
   ([top] ? [top] ) ||
   top_default"
-HEIGHT="\calc(\
+HEIGHT="
   (\$height$\ ? \$height$\) ||
   (height ? height) ||
   ([height_wiki] ? [height_wiki]) ||
-  height_default
-  \ + \ TOP \)\"
-STYLE="\height:\HEIGHT\;\"
-STYLEFRAME="\height:\HEIGHT\;top:-\TOP\;\">
+  height_default"
+HEIGHT_INNER="
+  \calc(\ HEIGHT \ + \ TOP \)\"
+STYLE="
+  \height:\HEIGHT\;\"
+STYLEFRAME="
+  \height:\HEIGHT_INNER\;top:-\TOP\;\">
 <$list filter="[<SERVER>]" variable="none">
 <$list filter="[<LINK>prefix[yes]]">
 <a href=<<URL>> target="_blank">{{$:/plugins/tobibeer/external/lingo/open}}</a>

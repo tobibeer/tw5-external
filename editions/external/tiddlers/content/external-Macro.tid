@@ -1,6 +1,6 @@
 created: 20160113130104151
 creator: Tobias Beer
-modified: 20160113153248173
+modified: 20160113161219618
 modifier: Tobias Beer
 title: external-Macro
 type: text/vnd.tiddlywiki
@@ -23,16 +23,6 @@ All the below parameters are optional:
 | 3 |height|the height of the iframe|<<default height>>|
 | 4 |top|the negative top offset of the iframe|<<default top>>|
 | 5 |link|whether to display a link above the iframe|`yes`|
-
-!! Examples
-
-<$macrocall $name="`" text="""<<external-tiddler title:"external-Install" height:"50px">>"""/>
-
-You can also use the <<x TiddlerWidget>>  to create a proper context:
-
-<$macrocall $name="`" text="""<$tiddler tiddler="tobibeer: external-Install">
-<<external-tiddler>>
-</$tiddler>"""/>
 
 !! Source
 
