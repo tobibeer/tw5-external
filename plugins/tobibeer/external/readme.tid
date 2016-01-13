@@ -1,0 +1,16 @@
+title: $:/plugins/tobibeer/external/readme
+
+The plugin $:/plugins/tobibeer/external provides:
+
+; &lt;&lt;external-tiddler>>
+: a macro to render an iframe with a tiddler of an external wiki
+; $:/plugins/tobibeer/external/template
+: a view-template displaying an external tiddler when:<div>
+&nbsp; &nbsp; » 1. the title matches the remote tiddler pattern
+&nbsp; &nbsp; » 2. the external wiki is configured and<br>
+</div>
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#external

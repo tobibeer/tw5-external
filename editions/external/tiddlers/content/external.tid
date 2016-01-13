@@ -1,0 +1,10 @@
+created: 20160113131310042
+creator: Tobias Beer
+modified: 20160113132123720
+modifier: Tobias Beer
+tabs: Info Macro Template Configure Install
+tags: Plugins Macros Templates
+title: external
+type: text/vnd.tiddlywiki
+
+<<plugin-docs external>>

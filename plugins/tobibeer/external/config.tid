@@ -1,0 +1,16 @@
+title: $:/plugins/tobibeer/external/config
+
+Configure external wikis under `$:/config/ExternalWiki/<wiki name>` specifying:
+
+; text
+: the url of the wiki (w/o final `#`)
+; top
+: a top margin ignored when rendering, e.g. wiki header
+; link
+: whether to display a link to the title
+; height
+: default iframe height for wiki
+
+These defaults provide global fallbacks:
+
+<<list-links "height top link wiki +[addprefix[$:/plugins/tobibeer/external/defaults/]]">>

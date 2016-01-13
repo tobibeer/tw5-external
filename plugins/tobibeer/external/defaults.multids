@@ -1,0 +1,6 @@
+title: $:/plugins/tobibeer/external/
+
+defaults/top: 0
+defaults/height: 480px
+defaults/link: yes
+lingo/open: view at ''<<WIKI>>''

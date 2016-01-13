@@ -1,0 +1,9 @@
+title: $:/plugins/tobibeer/external/styles
+tags: $:/tags/Stylesheet
+
+.tc-external-tiddler{
+position:relative;overflow:hidden;
+}
+.tc-external-tiddler > iframe{
+position:absolute;border:0;width:100%;
+}

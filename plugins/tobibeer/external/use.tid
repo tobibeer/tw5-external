@@ -1,0 +1,20 @@
+title: $:/plugins/tobibeer/external/use
+
+Configure an external wiki, then create tiddlers titled:
+
+`<external wiki>: <external tiddler name`
+
+Alternatvely, use the ''external-tiddler macro'' with these parameters:
+
+; 1: wiki
+: a configured external wiki
+; 2: title
+: the external tiddler title
+; 3: height
+: irame height
+; 4: height
+: negative top offset (define positive)
+; 5: link
+: display link to tiddler above iframe
+
+You can also render an external tiddler in wikitext by wrapping the ''external-tiddler'' macro in a ''$tiddler'' widget specifying the above title pattern as the tiddler attribute.

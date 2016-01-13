@@ -1,0 +1,58 @@
+tags: $:/tags/Macro
+title: $:/plugins/tobibeer/external/macro
+
+\define external-tiddler(wiki,title,height,top,link)
+<$setvars
+  _wiki = "[all[current]split:first[: ]]"
+  _wiki_default={{$:/plugins/tobibeer/external/defaults/wiki}}
+WIKI="
+  (\$wiki$\ ? \$wiki$\) ||
+  ([wiki] ? [wiki]) ||
+  wiki_default">
+<$setvars CONFIG="[config]"
+  _config="[<WIKI>addprefix[$:/config/ExternalWiki/]]">
+<$list filter="[<CONFIG>]" variable="none">
+<$setvars
+  _title="""[all[current]split[: ]]"""
+  _height={{!!height}}
+  _height_wiki="[<CONFIG>get[height]]"
+  _height_default={{$:/plugins/tobibeer/external/defaults/height}}
+  _top="[<CONFIG>get[top]]"
+  _top_default={{$:/plugins/tobibeer/external/defaults/top}}
+  _server="[<CONFIG>get[text]]"
+  _link="[<CONFIG>get[link]]"
+  _link_default={{$:/plugins/tobibeer/external/defaults/link}}
+SERVER="[server]"
+LINK="
+  (\$link$\ ? \$link$\) ||
+  ([link] ? [link]) ||
+  link_default"
+TITLE="""
+  (\$title$\ ? \$title$\) ||
+  [title[2,n][][: ]]"""
+URL="""SERVER\#\TITLE"""
+TOP="
+  (\$top$\ ? \$top$\ ) ||
+  ([top] ? [top] ) ||
+  top_default"
+HEIGHT="\calc(\
+  (\$height$\ ? \$height$\) ||
+  (height ? height) ||
+  ([height_wiki] ? [height_wiki]) ||
+  height_default
+  \ + \ TOP \)\"
+STYLE="\height:\HEIGHT\;\"
+STYLEFRAME="\height:\HEIGHT\;top:-\TOP\;\">
+<$list filter="[<SERVER>]" variable="none">
+<$list filter="[<LINK>prefix[yes]]">
+<a href=<<URL>> target="_blank">{{$:/plugins/tobibeer/external/lingo/open}}</a>
+</$list>
+<div class="tc-external-tiddler" style=<<STYLE>>>
+<iframe src=<<URL>> style=<<STYLEFRAME>> scrolling="no"/>
+</div>
+</$list>
+</$setvars>
+</$list>
+</$setvars>
+</$setvars>
+\end

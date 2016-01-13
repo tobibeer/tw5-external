@@ -1,0 +1,11 @@
+title: $:/plugins/tobibeer/external/depends
+
+This plugin depends on:
+
+* [[tobibeer/setvars|http://tobibeer.github.io/tw5-plugins/#setvars]]
+* [[tobibeer/split|http://tobibeer.github.io/tw5-plugins/#split]]
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#external
