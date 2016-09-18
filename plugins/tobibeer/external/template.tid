@@ -3,6 +3,6 @@ list-after: $:/core/ui/ViewTemplate/tags
 tags: $:/tags/ViewTemplate
 
 <$list variable="none"
-filter="[all[current]!is[system]split[: ]limit[1]]">
+filter="[all[current]!is[system]split[: ]limit[1]addprefix[$:/config/ExternalWiki/]has[text]]">
 <<external-tiddler>>
 </$list>
